@@ -1,32 +1,14 @@
-:root{
-  --container-max-width-default: 40%;
-  --container-max-width-medium: 57%;
-  --container-max-width-small: 90%;
-}
 
-.container {
-  max-width: var(--container-max-width-default)!important;
-  border-top: 0px;
-  padding: 0px;
-  box-shadow: var(--container-shadow);
-  background-color: var(--container-bg);
-  color: var(--subtle-dark);
-  position: relative;
-
+.calculatorDiv {
+  width: 800px; 
+  height: 880px;
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   border: solid;
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: var(--container-max-width-small)!important;
-  }
-}
-
-@media screen and (max-width: 1300px) and (min-width: 993px) {
-  .container {
-    max-width: var(--container-max-width-medium)!important;
-  }
-}
 
 .App {
   text-align: center;
@@ -34,14 +16,16 @@
 
 
 .display {
+  background-color: lightblue; 
   border: solid;
   font-size: 70px;
   display: flex;
   flex-direction: row-reverse;
+  padding: 10px;
 }
 
 .operations {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -51,8 +35,8 @@
 
 .button {
   border: solid;
-  height: 140px;
-  width: 140px;
+  height: 148px;
+  width: 148px;
   font-size: 70px;
 }
 

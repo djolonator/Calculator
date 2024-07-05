@@ -92,7 +92,7 @@ export default function Calculator() {
     };
     
     return (
-        <div className="container">
+        <div className="calculatorDiv">
             <Display displayValue={displayValue} />
             <div className='operations'>
                 <Button symbol={"\u02FF"} onClick={handleBackSpaceClick}></Button>
