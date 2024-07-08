@@ -80,7 +80,7 @@ export default function Calculator() {
         }
     };
 
-    const handleNSignClick = () => {
+    const handleSignClick = () => {
         if (displayValue !== "0"){
             if (displayValue[0] === "-"){
                 setDisplayValue(Utils.removeFirstCharFromString(displayValue));
@@ -115,7 +115,7 @@ export default function Calculator() {
                 <Button symbol={"3"} onClick={handleDigitClick}></Button>
                 <Button symbol={"+"} onClick={handleOperationForTwoValuesClick}></Button>
                 <Button symbol={"null"}></Button>
-                <Button symbol={"-/+"} onClick={handleNSignClick}></Button>
+                <Button symbol={"-/+"} onClick={handleSignClick}></Button>
                 <Button symbol={"0"} onClick={handleDigitClick}></Button>
                 <Button symbol={"."} onClick={handleForPeriodClick}></Button>
                 <Button symbol={"="} onClick={handleEqualClick}></Button>
